@@ -15,13 +15,13 @@ Courier API. Instantly Courier Anything in Downtown Austin in 1 hour for just $9
 ## Installation
 
 ```
-$ npm install teleport-js
+$ npm install @ideea-inc/teleport-js
 ```
 
 ## Example
 
 ```js
-const Teleport = require('teleport-js')
+const Teleport = require('@ideea-inc/teleport-js')
 const teleport = new Teleport('API_KEY')
 
 teleport.create({

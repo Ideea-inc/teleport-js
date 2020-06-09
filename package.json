@@ -1,5 +1,5 @@
 {
-    "name": "teleport-js",
+    "name": "@ideea-inc/teleport-js",
     "version": "1.0.0",
     "description": "JavaScript SDK for Teleport",
     "main": "./src/index.js",
