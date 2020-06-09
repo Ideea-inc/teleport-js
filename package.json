@@ -1,0 +1,30 @@
+{
+    "name": "teleport-js",
+    "version": "1.0.0",
+    "description": "JavaScript SDK for Teleport",
+    "main": "./src/index.js",
+    "scripts": {
+        "test": "mocha --timeout 10000 tests"
+    },
+    "files": [
+        "src/"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ideea-inc/teleport-js.git"
+    },
+    "author": "Anthony Budd <anthonybudd@ideea.co.uk>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/ideea-inc/teleport-js/issues"
+    },
+    "homepage": "https://github.com/ideea-inc/teleport-js#readme",
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "form-data": "^2.5.1",
+        "mocha": "^5.0.0"
+    },
+    "dependencies": {
+        "axios": "^0.18.0"
+    }
+}
