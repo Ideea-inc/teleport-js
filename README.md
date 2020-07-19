@@ -4,13 +4,13 @@
 
 ---
 
-### [Teleport](https://ideea.io/teleport) &nbsp;&nbsp;|&nbsp;&nbsp; [Ideea.io](https://ideea.io) &nbsp;&nbsp;|&nbsp;&nbsp; [User Guide](https://ideea.io/docs/teleport/user-guide) &nbsp;&nbsp;|&nbsp;&nbsp; [OpenAPI Spec](https://ideea.io/docs/teleport/openapi-spec) &nbsp;&nbsp;|&nbsp;&nbsp; [NPM](https://www.npmjs.com/package/teleport-js)
+### [Teleport](https://ideea.io/teleport) &nbsp;&nbsp;|&nbsp;&nbsp; [Ideea.io](https://ideea.io) &nbsp;&nbsp;|&nbsp;&nbsp; [User Guide](https://ideea.io/docs/teleport/user-guide) &nbsp;&nbsp;|&nbsp;&nbsp; [OpenAPI Spec](https://ideea.io/docs/teleport/openapi-spec) &nbsp;&nbsp;|&nbsp;&nbsp; [NPM](https://www.npmjs.com/package/@ideea-inc/teleport-js)
 
 ---
 
 # Teleport JS SDK
 
-Courier API. Instantly Courier Anything in Downtown Austin in 1 hour for just $9.
+Courier API. Instantly Courier Anything in Downtown Austin in 1 hour from just $9.
 
 ## Installation
 
@@ -53,10 +53,10 @@ A Teleport represents a physical item being moved from point A to point B. When 
 ```js
 teleport.create({
     group_id: 'e0ab5d2c-5bce-4076-a128-64c6467e914a',
-    data: '{arbitrary: "string"}',                          // Arbitrary user data
+    data: '{arbitrary: "string"}',                          // Arbitrary user data (optional)
     notifications: false,                                   // Email Notifications
 
-    pickup_image: fs.createReadStream('./package.jpg'),     // Image of the item for courier
+    pickup_image: fs.createReadStream('./package.jpg'),     // Image of the item for courier (optional)
     pickup_name: 'Anthony Budd',
     pickup_address_line_1: '300 Bowie Street',
     pickup_zipcode: '78703',

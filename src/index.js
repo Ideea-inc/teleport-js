@@ -101,8 +101,9 @@ Teleport.prototype.get = function (teleportID) {
  * 
  * @param {FormData} teleport
  *   @param {String} [teleport.group_id]
- *   @param {Boolean} [teleport.notifications]
+ *   @param {Boolean}[teleport.notifications]
  *   @param {String} [teleport.data]
+ *   @param {String} [teleport.vehicle]
  * 
  *   @param {File}   [teleport.pickup_image]
  *   @param {String} [teleport.pickup_name]
