@@ -70,19 +70,15 @@ teleport.create({
 })
 ```
 
-### Teleport.estimate(teleport)
-To estimate the cost of a teleport before you make a request use the .estimate() method.
+### Teleport.quote(teleport)
+To get a quote the cost of a teleport before you make a teleport use the .quote() method.
 
 ```js
-teleport.estimate({
-    pickup_address_line_1: '300 Bowie Street',
-    pickup_zipcode: '78703',
-
-    delivery_address_line_1: '401 Brazos Street',
-    delivery_zipcode: '78701',
-}).then(({ estimate, estimate_human }) => {
-	console.log(estimate) // 900 - Estimate in cents
-	console.log(estimate_human) // $9.00 - Human formatted string
+teleport.quote({
+    pickup_address: '300 Bowie Street, 78703',
+    delivery_address: '401 Brazos Street, 78701',
+}).then((quote) => {
+	console.log(quote)
 })
 ```
 
