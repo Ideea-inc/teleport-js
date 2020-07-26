@@ -80,7 +80,7 @@ teleport.estimate({
 
     delivery_address_line_1: '401 Brazos Street',
     delivery_zipcode: '78701',
-}).then({ estimate, estimate_human } => {
+}).then(({ estimate, estimate_human }) => {
 	console.log(estimate) // 900 - Estimate in cents
 	console.log(estimate_human) // $9.00 - Human formatted string
 })
