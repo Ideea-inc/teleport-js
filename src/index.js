@@ -47,6 +47,26 @@ var Teleport = function (apiKey, opts = {}) {
 // -----------------------------------------------------
 
 /**
+ * POST /estimate
+ *
+ * @param {Object} teleport
+ *   @param {String} [teleport.pickup_address_line_1]
+ *   @param {String} [teleport.pickup_zipcode]
+ *   @param {String} [teleport.delivery_address_line_1]
+ *   @param {String} [teleport.delivery_zipcode]
+ * @returns {Promise}
+ */
+Teleport.prototype.estimate = function (teleport) {
+    return new Promise((resolve, reject) => {
+        axios.post(`${this.hostname}/estimate`, teleport, {
+            headers: this.getHeaders(),
+        })
+            .then(({ data }) => resolve(data))
+            .catch(err => reject(err))
+    })
+}
+
+/**
  * GET /teleports
  *
  * @returns {Promise}

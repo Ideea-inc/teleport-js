@@ -10,7 +10,7 @@
 
 # Teleport JS SDK
 
-Courier API. Instantly Courier Anything in Downtown Austin in 1 hour from just $9.
+Instantly Courier Anything in Austin in 1 hour from just $9.
 
 ## Installation
 
@@ -67,6 +67,22 @@ teleport.create({
     delivery_zipcode: '78701',
 }).then((teleport) => {
 	console.log(teleport)
+})
+```
+
+### Teleport.estimate(teleport)
+To estimate the cost of a teleport before you make a request use the .estimate() method.
+
+```js
+teleport.estimate({
+    pickup_address_line_1: '300 Bowie Street',
+    pickup_zipcode: '78703',
+
+    delivery_address_line_1: '401 Brazos Street',
+    delivery_zipcode: '78701',
+}).then({ estimate, estimate_human } => {
+	console.log(estimate) // 900 - Estimate in cents
+	console.log(estimate_human) // $9.00 - Human formatted string
 })
 ```
 

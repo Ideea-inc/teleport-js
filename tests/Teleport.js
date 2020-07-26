@@ -1,13 +1,13 @@
-var FormData = require('form-data');
-var { assert } = require("chai");
-var fs = require("fs");
+const FormData = require('form-data');
+const { assert } = require("chai");
+const fs = require("fs");
 
 const teleport = require("./config/teleport");
 
 const TELEPORT_ID = "28574006-5ac2-41bd-a609-986056c1ec5b";
 const GROUP_ID = "00000000-9a34-4466-ba4c-46438def7d7f";
 
-var assertModel = (model) => assert.containsAllKeys(model, [
+const assertModel = (model) => assert.containsAllKeys(model, [
     'id',
     'user_id',
     'group_id',
